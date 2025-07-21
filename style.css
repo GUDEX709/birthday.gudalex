@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url('https://i.postimg.cc/k2PskwBr/photo.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  color: white;
+  position: relative;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.container { padding: 20px; }
+
+h1 {
+  font-size: 3em;
+  animation: bounce 2s infinite;
+  color: #ffccff;
+  text-shadow: 2px 2px 5px #000;
+}
+
+p {
+  font-size: 1.5em;
+  margin-top: 10px;
+  color: #fffacd;
+  text-shadow: 1px 1px 3px #000;
+}
+
+audio {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 300px;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+  }
